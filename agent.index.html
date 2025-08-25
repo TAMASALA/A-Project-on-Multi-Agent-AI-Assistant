@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="'en">
+<head> 
+    <meta charset="UTF-8">
+    <title> AGENTIC-AI </title>
+</head>
+<body style ='font-family:sans-serif; padding:40px;'>
+    <h1>  FEEL FREE TO REACH OUT ANYTIME </h1>
+    <form action="/predict" method="post">
+        <label> query </label><br>
+        <input type="value" name="Name" step="any" required><br><br>
+        
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+</body>
+
+     {% if prediction_text %}
+        <h3>Output:</h3>
+        <p>{{ prediction_text }}</p>
+    {% endif %}
+
+
+</html>
+
