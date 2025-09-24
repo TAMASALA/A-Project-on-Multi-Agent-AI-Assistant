@@ -1,35 +1,43 @@
-# Multi-Agent-AI-Assistant
-This project is an AI-powered multi-agent system built with Flask and Google Gemini API. It defines multiple intelligent agents (Web Agent &amp; Finance Agent) that collaborate under a team setup to generate structured, source-backed insights. The system allows users to interact via a web interface.
+🤖 Multi-Agent CrewAI System with Flask
 
-🤖 Multi-Agent AI Assistant
-📌 Overview
+This project demonstrates how to build a multi-agent AI system using the CrewAI framework and integrate it into a Flask web application.
+The system is designed to answer user queries by combining the strengths of multiple specialized agents (Web Agent, Sports Agent, and Writer Agent).
 
-This project is an AI-powered multi-agent system built with Flask and Google Gemini API. It defines multiple intelligent agents (Web Agent & Finance Agent) that collaborate under a team setup to generate structured, source-backed insights. The system allows users to interact via a web interface.
+📌 Features
 
-🔑 Features
+Multi-Agent Collaboration:
 
-🌐 Web Agent – Searches the web using DuckDuckGo + WebsiteTools.
+Web Agent → fetches recent factual information from the web
 
-💹 Finance Agent – Fetches real-time stock and financial data using YFinance.
+Sports Agent → collects sports-related stats and events
 
-👥 Multi-Agent Team – Coordinates between agents to provide comprehensive results.
+Writer Agent → generates engaging summaries/blog posts
 
-⚡ Google Gemini API Integration – Uses gemini-1.5-flash for fast AI-powered responses.
+Custom LLM Integration: Uses Gemini (Google) as the language model with a low temperature for factual consistency.
 
-🖥️ Flask Web App – Simple frontend for querying the assistant.
+Tool Usage:
 
-📊 Structured Insights – Generates financial reports with clear sections and tables.
+SerperDevTool for web search
+
+CodeInterpreterTool for computations
+
+Flask Web Interface for user interaction
+
+End-to-End Flow: User enters a query → CrewAI agents collaborate → Flask app displays result.
 
 🛠️ Tech Stack
 
-Python
+Programming Language: Python
 
-Flask
+Frameworks/Libraries:
 
-Google Gemini API
+CrewAI
+ – Multi-agent system
 
-Agno Agents + Teams
+Flask – Web application framework
 
-DuckDuckGo Search API
+SerperDevTool – Search engine tool
 
-YFinance Tools
+Gemini (LLM) – Text generation
+
+Other Tools: dotenv, HTML (Flask templates)
